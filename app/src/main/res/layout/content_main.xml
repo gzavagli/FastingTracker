@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zavagli.fastingtracker.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="157dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Current status:"
+        android:textAlignment="textEnd"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStartEating"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Start Eating"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonStopEating"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Stop Eating"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStartEating"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonStartEating"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStartEating" />
+
+    <TextView
+        android:id="@+id/textViewCurrentStatus"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonStats"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Stats"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStopEating"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonStopEating"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStopEating" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="157dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Duration:"
+        android:textAlignment="textEnd"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCurrentStatus"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+</android.support.constraint.ConstraintLayout>
